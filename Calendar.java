@@ -67,7 +67,7 @@ public class CalendarFinal {
     public static void printDate(){
         System.out.print(dayOfMonth + "/" + month + "/" + year);
         if (dayOfWeek == 0) {
-            System.out.print(" (Sunday)");
+            System.out.print("Sunday");
         }
         System.out.println();
     }
