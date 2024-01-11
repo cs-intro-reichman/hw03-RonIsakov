@@ -1,17 +1,19 @@
-/** String processing exercise 2. */
 public class UniqueChars {
-    public static void main(String[] args) {  
-        String str = args[0];
-        System.out.println(uniqueChars(str));
-    }
-
-    /**
-     * Returns a string which is identical to the original string, 
-     * except that all the duplicate characters are removed,
-     * unless they are space characters.
-     */
-    public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
-    }
-}
+	public static void main (String[] args) {
+        // definig String answer and the strings we input so it has no unique chars
+		String original = args[0];
+		String answer = "";
+        // goes for each and every one of the chars of the string original 
+        // and adding only unique chars and space to the answer 
+		for(int i=0; i <original.length() ; i++){
+			if( (answer.indexOf(original.charAt(i)) == -1) || ((original.charAt(i)) == ' ' )){
+				answer = answer + original.charAt(i);
+			}
+		}
+        // printing the String we formed
+		System.out.println(answer);
+		
+		
+		
+		
+	}}
