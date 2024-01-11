@@ -1,14 +1,14 @@
 /** 
  * Prints the calendars of all the years in the 20th century.
  */
-public class CalendarFinal {	
+public class Calendar {	
     // Starting the calendar on 1/1/1900
     static int dayOfMonth = 1;   
     static int month = 1;
     static int year = 1900;
     static int dayOfWeek = 2;     // 1.1.1900 was a Monday
     static int nDaysInMonth = 31; // Number of days in January
-     
+    
     
     /** 
      * Prints the calendars of all the years in the 20th century. Also prints the  
@@ -67,7 +67,7 @@ public class CalendarFinal {
     public static void printDate(){
         System.out.print(dayOfMonth + "/" + month + "/" + year);
         if (dayOfWeek == 0) {
-            System.out.print("Sunday");
+            System.out.print(" Sunday");
         }
         System.out.println();
     }
