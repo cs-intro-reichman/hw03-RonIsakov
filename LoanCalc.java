@@ -62,11 +62,10 @@ public class LoanCalc {
 	// Side effect: modifies the class variable iterationCounter.
     public static double bisectionSolver(double loan, double rate, int n, double epsilon) {  
 		// culculate the the remain balance for this payment
-		double balance = LoanCalc.endBalance(loan, rate, n, g); 
-
-		// L - lsetting lower and upper payment
+        //  lsetting lower and upper payment
 		double L = (loan / n), H = loan;
 		double g = (H + L) / 2; 
+		double balance = LoanCalc.endBalance(loan, rate, n, g); 
 		// Reset the variable to the other search
 		iterationCounter = 0;		 
 		// implementing the bisection
