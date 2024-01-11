@@ -8,7 +8,7 @@ public class CalendarFinal {
     static int year = 1900;
     static int dayOfWeek = 2;     // 1.1.1900 was a Monday
     static int nDaysInMonth = 31; // Number of days in January
-    
+     
     
     /** 
      * Prints the calendars of all the years in the 20th century. Also prints the  
